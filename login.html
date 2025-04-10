@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup | My Portfolio</title>
+    <link rel="stylesheet" href="login-styles.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+</head>
+<body>
+    <div class="floating-shapes">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+    <div class="container">
+        <div class="form-container">
+            <div class="tabs">
+                <div class="tab active" data-tab="login">Login</div>
+                <div class="tab" data-tab="signup">Sign Up</div>
+            </div>
+            
+            <div class="form-wrapper">
+                <!-- Login Form -->
+                <form id="login-form" class="form active">
+                    <h2>Welcome Back</h2>
+                    <p>Enter your credentials to access your account</p>
+                    
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </div>
+                        <input type="password" placeholder="Password" required>
+                        <div class="toggle-password">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                    </div>
+                    
+                    <div class="remember-forgot">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn">Login Now</button>
+                    
+                    <div class="social-login">
+                        <p><span>Or login with</span></p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <ion-icon name="logo-google"></ion-icon>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+                
+                <!-- Signup Form -->
+                <form id="signup-form" class="form">
+                    <h2>Create Account</h2>
+                    <p>Sign up for free and start your journey</p>
+                    
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </div>
+                        <input type="password" placeholder="Password" required>
+                        <div class="toggle-password">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="input-icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </div>
+                        <input type="password" placeholder="Confirm Password" required>
+                    </div>
+                    
+                    <div class="terms">
+                        <label>
+                            <input type="checkbox" required> I agree to the <a href="#">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Create Account</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="image-container">
+            <div class="image-content">
+                <img src="https://cdn-icons-png.flaticon.com/512/6681/6681204.png" alt="Login illustration">
+                <h2>Welcome to My Portfolio</h2>
+                <p>Login to access exclusive content and features. Join our community today!</p>
+            </div>
+        </div>
+    </div>
+    
+    <a href="portfolio.html" class="back-link">
+        <ion-icon name="arrow-back-outline"></ion-icon> Back to Portfolio
+    </a>
+    
+    <script src="login.js"></script>
+</body>
+</html>
